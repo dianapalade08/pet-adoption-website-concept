@@ -1,0 +1,586 @@
+:root {
+  --red-color: #e1525f;
+  --brown-color: #574141;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Hero-Regular';
+  src: url("./Fonts/Hero-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Hero-Bold';
+  src: url("./Fonts/Hero-Bold.otf");
+}
+
+html,
+body {
+  width: auto;
+  height: auto;
+  background-color: #ffff;
+  scroll-behavior: smooth;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+}
+
+#goTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 48.5%;
+  z-index: 99;
+  border: 1px solid black;
+  border-radius: 20%;
+  background-color: white;
+  height: 5%;
+  color: black;
+  cursor: pointer;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 0.3%;
+  font-size: 170%;
+  font-weight: bold;
+  font-family: 'Hero-Bold';
+  transition: all 0.5s ease;
+}
+
+#goTopBtn:hover {
+  background-color: black;
+  /* Add a dark-grey background on hover */
+  color: white;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+}
+
+#home>.content {
+  padding-top: 10%;
+}
+
+.header>div>.nav-links li a {
+  font-family: 'Hero-Bold';
+  color: var(--brown-color);
+}
+
+.header>div>.nav-links :hover {
+  background-color: var(--red-color);
+  color: white;
+  border-radius: 5%;
+}
+
+.donate-btn,
+.adopt-btn {
+  color: white;
+  background-color: var(--red-color);
+  border: none;
+  border-radius: 50px;
+  font-family: 'Hero-Bold';
+  cursor: pointer;
+}
+
+#home>.content>.card {
+  width: auto;
+  height: auto;
+}
+
+#home>.content>.card>.card-text-one {
+  font-family: 'Hero-Bold';
+  color: white;
+}
+
+#home>.content>.card>.card-text-two {
+  font-family: 'Hero-Regular';
+  color: white;
+  line-height: 150%;
+  margin-top: 2%;
+}
+
+#happystories {
+  background-image: url('Images/background-image-desktop-happy-stories.png');
+  background-size: cover;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1920px) {
+  .header>.logo {
+    margin-top: -3%;
+    margin-left: 4%;
+    position: relative;
+  }
+
+  .header>.logo>img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .header>div>.nav-links {
+    list-style: none;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -10%;
+    margin-left: 50%;
+  }
+  .header>div>.nav-links li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .header>div>.nav-links>.donate-btn {
+    width: 12%;
+    height: auto;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: -1%;
+    margin-left: 10px;
+  }
+
+  #home>.content {
+    display: inline-block;
+  }
+
+  #home>.content>.card {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    margin-top: 7%;
+    padding: 30px;
+    margin-left: 10%;
+    background-color: var(--red-color);
+
+  }
+
+  #home>.content>.card>.card-text-one {
+    font-size: 350%;
+  }
+
+  #home>.content>.card>.card-text-two {
+    font-size: 90%;
+  }
+
+  #home>.content>.card>.card-subscribe {
+    width: 35%;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+  }
+
+  #home>.content>.card>.card-subscribe>label {
+    flex: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 20px;
+    font-size: 100%;
+    color: white;
+    font-family: 'Hero-Bold';
+  }
+
+  #home>.content>.card>.card-subscribe>button {
+    flex: 50%;
+    border-radius: 25px;
+    border: 1px solid white;
+    height: 100%;
+    background-color: white;
+    font-family: 'Hero-Bold';
+    color: var(--brown-color);
+    font-size: 100%;
+  }
+
+  #home>.content>.home-picture {
+    width: 50%;
+    height: 50%;
+    margin-top: 3%;
+    margin-right: 5%;
+    float: right;
+
+  }
+
+  #ourmission>.page-separator {
+    margin-right: auto;
+    width: 100%;
+    height: 7%;
+    background-color: var(--red-color);
+    border-bottom-right-radius: 45px;
+  }
+
+  #ourmission>.title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    color: var(--brown-color);
+    font-weight: bold;
+    font-family: 'Hero-Bold';
+  }
+
+  #ourmission>.title>.title-text-one {
+    font-size: 250%;
+  }
+
+  #ourmission>.title>.title-text-two {
+    font-size: 400%;
+    margin-top: 20px;
+  }
+
+  #ourmission>.content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 80%;
+    text-align: center;
+  }
+
+
+  table>tbody>tr>td {
+    width: 25%;
+    text-align: center;
+    border: 0;
+  }
+
+  table tbody tr:last-child>td {
+    padding-top: 5%;
+  }
+
+  .ourmission-data-icon {
+    width: 50%;
+  }
+
+  .ourmission-data-title {
+    font-size: 250%;
+    font-family: 'Hero-Bold';
+    color: var(--brown-color);
+  }
+
+  .ourmission-data-description {
+    margin: auto;
+    width: 50%;
+    font-size: 100%;
+    font-family: 'Hero-Regular';
+    line-height: 150%;
+    color: var(--brown-color);
+  }
+
+  .ourmission-data-count {
+    font-size: 400%;
+    color: var(--red-color);
+    font-family: 'Hero-Bold';
+  }
+
+  .ourmission-data-count-title {
+    font-size: 150%;
+    font-family: 'Hero-Bold';
+    color: var(--brown-color);
+    margin: auto;
+    width: 50%;
+  }
+
+  #getinvolved>.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 93%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #getinvolved>.page-separator {
+    width: 100%;
+    height: 7%;
+    background-color: var(--brown-color);
+    border-top-left-radius: 45px;
+  }
+
+  .getinvolved-take-action {
+    padding: 1%;
+    margin: auto;
+    width: 90%;
+    flex: 60%;
+    text-align: center;
+    height: 100%;
+  }
+
+  .getinvolved-take-action-title {
+    font-size: 350%;
+    font-family: 'Hero-Bold';
+    color: var(--brown-color);
+    width: 60%;
+    margin: auto;
+  }
+
+  .getinvolved-take-action-panels {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 93%;
+  }
+
+  .adopt-panel,
+  .donate-panel {
+    height: 80%;
+    margin: auto;
+    flex: 49%;
+    border: 2px solid var(--brown-color);
+    border-radius: 50px;
+  }
+
+  .panels-separator {
+    flex: 2%;
+  }
+
+  .adopt-panel>img,
+  .donate-panel>img {
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  .adopt-panel>button,
+  .donate-panel>button {
+    width: 80%;
+    padding: 5%;
+    font-size: 400%;
+    margin-top: 10%;
+  }
+
+  .getinvolved-description {
+    flex: 40%;
+    height: 100%;
+    background-color: var(--brown-color);
+  }
+
+  .getinvolved-description-text {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding: 4%;
+  }
+
+  .getinvolved-description-text>p {
+    color: white;
+    text-align: justify;
+  }
+
+  .getinvolved-description-text>p:first-child {
+    font-family: 'Hero-Bold';
+    font-size: 350%;
+  }
+
+  .getinvolved-description-text>p:last-child {
+    margin-top: 5%;
+    font-family: 'Hero-Regular';
+    font-size: 150%;
+    line-height: 150%;
+  }
+
+  .getinvolved-description>img {
+    width: 100%;
+    height: 50%;
+  }
+
+  #happystories {
+    padding-top: 5%;
+  }
+
+  .happy-stories-banner {
+    margin-left: 25%;
+    background-color: var(--red-color);
+    color: white;
+    font-family: 'Hero-Bold';
+    font-size: 400%;
+    width: 75%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+  }
+
+  .happy-stories-pictures {
+    margin-top: 7%;
+    width: 90%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .happy-stories-picture-one,
+  .happy-stories-picture-two,
+  .happy-stories-picture-three {
+    width: 30%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .happy-stories-picture-one,
+  .happy-stories-picture-three {
+    height: 100%;
+  }
+
+  .happy-stories-picture-two {
+    height: 85%;
+  }
+
+  .happy-stories-picture-one {
+    background-image: url('Images/happy\ stories\ 1.jpg');
+  }
+
+  .happy-stories-picture-two {
+    background-image: url('Images/happy\ stories\ 2.jpg');
+  }
+
+  .happy-stories-picture-three {
+    background-image: url('Images/happy\ stories\ 3.jpg');
+  }
+
+  .happy-stories-arrows {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .happy-stories-arrows>button {
+    color: var(--brown-color);
+    font-family: 'Hero-Bold';
+    font-size: 1000%;
+    cursor: pointer;
+    background: none;
+    border: 0;
+  }
+
+  #contact {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact-links,
+  .contact-form {
+    margin: auto;
+    width: 45%;
+    height: 88%;
+  }
+
+  .contact-form {
+    background-color: var(--brown-color);
+    border-radius: 50px;
+    margin-right: 5%;
+  }
+
+  .contact-links,
+  .contact-form {
+    padding: 2%;
+  }
+
+  .contact-us-title {
+    color: var(--brown-color);
+    font-weight: bold;
+    font-family: 'Hero-Bold';
+    font-size: 250%;
+    margin-left: 2%;
+  }
+
+  .contact-get-in-touch {
+    color: var(--brown-color);
+    font-weight: bold;
+    font-family: 'Hero-Bold';
+    font-size: 590%;
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+
+  .contact-address {
+    margin-top: 5%;
+    color: var(--brown-color);
+    font-weight: bold;
+    font-family: 'Hero-Bold';
+    font-size: 200%;
+  }
+
+  .contact-address>ul {
+    list-style: none;
+    line-height: 250%;
+  }
+
+  .contact-address>ul>li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+  }
+
+  .contact-address>ul>li>img {
+    width: 12%;
+  }
+
+  .contact-form>form {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    padding-top: 5%;
+    text-align: center;
+  }
+
+  .contact-form>form>input {
+    width: 100%;
+    height: 15%;
+    border-radius: 50px;
+    margin-bottom: 10%;
+    color: var(--brown-color);
+    font-family: 'Hero-Bold';
+    font-size: 200%;
+    border: 0;
+  }
+
+  .contact-form>form>input::placeholder {
+    font-family: 'Hero-Bold';
+    font-size: 120%;
+    color: var(--brown-color);
+  }
+
+  .contact-form>form>input[type=text]:focus {
+    outline: none;
+  }
+
+  .contact-form>form>input[type=text] {
+    padding-left: 10%;
+  }
+
+  .contact-form>form>input[type=submit] {
+    width: 50%;
+    cursor: pointer;
+  }
+
+  .contact-form>.logo {
+    position: absolute;
+    margin-top: -13%;
+    margin-left: 27%;
+  }
+
+  .contact-form>.logo>img {
+    width: 100%;
+    height: 100%;
+  }
+}
